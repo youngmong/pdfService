@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lss.controller.UserDetailController">
+   <top>
+      <Pane prefHeight="70.0" prefWidth="858.0" style="-fx-background-color: #f2eada;" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView layoutX="131.0" layoutY="59.0" prefHeight="206.0" prefWidth="483.0" />
+            <Label fx:id="name" layoutX="443.0" layoutY="107.0" text="李少帅" />
+            <Label fx:id="sex" layoutX="453.0" layoutY="136.0" prefHeight="17.0" prefWidth="19.0" text="男" />
+            <Label fx:id="age" layoutX="428.0" layoutY="162.0" text="1995-01-01" />
+            <Label fx:id="number" layoutX="423.0" layoutY="190.0" text="16601119928" />
+            <Button layoutX="372.0" layoutY="302.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="90.0" text="返回" />
+            <ImageView fitHeight="185.0" fitWidth="136.0" layoutX="155.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baby1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

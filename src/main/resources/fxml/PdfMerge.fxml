@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lss.controller.PdfMergeController">
+    <top>
+        <Pane prefHeight="70.0" prefWidth="856.0" style="-fx-background-color: #f2eada;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="327.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="PDF文件合并" textAlignment="CENTER" wrappingWidth="186.0" />
+            </children>
+        </Pane>
+    </top>
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="pdfButton" layoutX="303.0" layoutY="55.0" onMouseClicked="#selectPDF"
+                        prefHeight="25.0" prefWidth="250.0" style="-fx-border-radius: 20;" text="请选择需要合并的PDF文件1" />
+                <TextField fx:id="pdfButton1" layoutX="303.0" layoutY="92.0" onMouseClicked="#selectPDF1"
+                        prefHeight="25.0" prefWidth="250.0" style="-fx-border-radius: 20;" text="请选择需要合并的PDF文件2" />
+                <Button layoutX="367.0" layoutY="334.0" mnemonicParsing="false" onAction="#mergePDF" text="合并" />
+                <Button layoutX="442.0" layoutY="334.0" mnemonicParsing="false" onAction="#back" text="返回" />
+            <TextField fx:id="savePath" layoutX="304.0" layoutY="256.0" onMouseClicked="#selectDirectory"
+                       prefHeight="27.0" prefWidth="249.0" text="请选择保存路径" />
+            <TextField fx:id="pdfName" layoutX="304.0" layoutY="301.0" onKeyReleased="#inputName"
+                       onMouseClicked="#clear" prefHeight="27.0" prefWidth="249.0" text="请输入存储文件名" />
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

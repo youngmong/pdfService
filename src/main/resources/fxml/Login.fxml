@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="900.0" style="-fx-padding: 0;" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lss.controller.LoginController">
+   <center>
+      <Pane prefHeight="457.0" prefWidth="814.0" style="-fx-background-color: #f2eada;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="420.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎使用">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="514.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--Darren Li">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="passwordInput" layoutX="334.0" layoutY="235.0" prefHeight="50.0" prefWidth="250.0" />
+            <TextField fx:id="accountInput" layoutX="334.0" layoutY="155.0" prefHeight="50.0" prefWidth="250.0" />
+            <Text layoutX="220.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号：">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="220.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码：">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <!--登录按钮-->
+            <Button layoutX="300.0" layoutY="338.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="78.0" text="登录" textFill="#225a1f" />
+            <!--清空-->
+            <Button layoutX="413.0" layoutY="338.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="40.0" prefWidth="81.0" text="清空" textFill="#225a1f" />
+            <Button layoutX="523.0" layoutY="338.0" mnemonicParsing="false" onAction="#exitBtn" prefHeight="40.0" prefWidth="81.0" text="退出" textFill="#225a1f" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

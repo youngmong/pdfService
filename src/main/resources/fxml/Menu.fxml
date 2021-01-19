@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="629.0" prefWidth="1003.0"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.lss.controller.MenuController">
+   <top>
+      <HBox prefHeight="67.0" prefWidth="1003.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="70.0" prefWidth="1003.0" style="-fx-background-color: #f2eada;">
+              <menus>
+                <Menu mnemonicParsing="false" style="-fx-font-size: 20;" text="PDF合并与拆分">
+                  <items>
+                      <MenuItem mnemonicParsing="false" onAction="#pdfMerge" text="PDF合并" />
+                      <MenuItem mnemonicParsing="false" onAction="#pdfSplice" text="PDF拆分" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" style="-fx-font-size: 20;" text="Excel比对">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#cdmList" text="两列数据差异" />
+                    <MenuItem mnemonicParsing="false" onAction="#cdmWrite" text="两列数据重复" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" style="-fx-font-size: 20;" text="记录">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#wordRecord" text="文字记录" />
+                         <MenuItem mnemonicParsing="false" onAction="#recordList" text="记录列表" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" style="-fx-font-size: 20;" text="个人中心">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#imageAllOf" text="供应链总括图" />
+                        <MenuItem mnemonicParsing="false" onAction="#accountDetail" text="账户详情" />
+                        <MenuItem mnemonicParsing="false" onAction="#exit" text="退出" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="550.0" prefWidth="1003.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

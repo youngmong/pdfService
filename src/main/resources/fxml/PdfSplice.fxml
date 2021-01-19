@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lss.controller.PdfSpliceController">
+    <top>
+        <Pane prefHeight="70.0" prefWidth="858.0" style="-fx-background-color: #f2eada;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="327.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="PDF文件拆分" textAlignment="CENTER" wrappingWidth="186.0" />
+            </children>
+        </Pane>
+    </top>
+    <center>
+        <Pane prefHeight="447.0" prefWidth="858.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="pdfButton" layoutX="335.0" layoutY="50.0" mnemonicParsing="false" onAction="#selectPDF" prefHeight="25.0" prefWidth="250.0" style="-fx-border-radius: 20;" text="请选择需要拆分的PDF文件" />
+                <TextField fx:id="startPage" layoutX="335.0" layoutY="90.0" prefWidth="250.0" />
+                <TextField fx:id="endPage" layoutX="335.0" layoutY="130.0" prefWidth="250.0" />
+                <TextField fx:id="pdfSpliceName" layoutX="335.0" layoutY="169.0" prefWidth="250.0" />
+                <Text layoutX="199.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PDF文件选择：" />
+                <Text layoutX="211.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="起始页码：" />
+                <Text layoutX="211.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="终止页码：" />
+                <Text layoutX="199.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PDF输出名称：" />
+                <Button layoutX="335.0" layoutY="261.0" mnemonicParsing="false" onAction="#splice" prefHeight="30.0" prefWidth="80.0" style="-fx-border-radius: 20;" text="拆分" textAlignment="CENTER" textFill="#225a1f" />
+                <Button layoutX="483.0" layoutY="261.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="80.0" text="返回" textAlignment="CENTER" />
+            </children>
+        </Pane>
+    </center>
+</BorderPane>
