@@ -15,6 +15,8 @@ import javax.annotation.Resource;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+// 登录相关接口
+
 @FXMLController
 public class LoginController implements Initializable{
     @Resource
