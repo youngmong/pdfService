@@ -7,7 +7,7 @@ import javafx.application.Platform;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Hello world!
+ * 项目启动类
  *
  */
 @SpringBootApplication
